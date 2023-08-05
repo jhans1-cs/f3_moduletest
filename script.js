@@ -33,7 +33,8 @@ async function ShowData() {
     });
 
     // Fetch location data based on the IP address
-    await fetch(`https://ipinfo.io/${IPAddress}?token=30dd7efacbc702`)
+    
+    await fetch(`https://ipinfo.io/${IPAddress}?token=0358bc159d3e65`)
         .then(response => response.json())
         .then(response => locationData = response)
         .catch(() => { alert("Problem with fetching data"); });
